@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<!-- <link rel="stylesheet" href="src/css/public.css"> -->
+	<!-- <link rel="stylesheet" href="src/css/details.css"> -->
+	<!-- 引用轮播css-->
+	<link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+	<!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
+	<!-- 引用轮播js -->
+	<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.js"></script>
+	<!-- public.js是公共的js -->
+	<!-- <script src="src/js/public.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="src/js/details-22c.js"></script></head>
+<body>
+	<div class="container header flex">
+	    <div class="navBtn">
+    	    <div class="navBtn1">
+    			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAnAQMAAABDk0jGAAAABlBMVEVMaXH/M15cfIwzAAAAAXRSTlMAQObYZgAAABdJREFUGNNj+Ff/////AwzEUxSCwW4fAIdfbcMFsLLlAAAAAElFTkSuQmCC" class="img-responsive">
+    		</div>
+	    </div>
+		<div class="logo">
+			<div>
+				<img src="src/images/logo-ff6.png" class="img-responsive center-block">
+			</div>
+		</div>
+	</div>
+	<div class="popup">
+		<ul class="list-unstyled">
+			<li><a href="index.html" title="首页">首页</a></li>
+			<li><a href="gallery.html" title="产品中心">产品中心</a></li>
+			<li><a href="video.html" title="视频中心">视频中心</a></li>
+			<li><a href="new.html" title="潮流资讯">潮流资讯</a></li>
+			<li><a href="about.html" title="关于我们">关于我们</a></li>
+			<li><a href="customer.html" title="客户服务">客户服务</a></li>
+			<li><a href="contact.html" title="联系我们">联系我们</a></li>
+			<li><a href="shopping.html" title="在线商城">在线商城</a></li>
+		</ul>
+	</div>
+	<div class="container headerFill"></div>
+	<!-- 以上是头部 -->
+	<div class="container section">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><a href="javascript:void(0)" title=""><img src="src/images/icon1-430.png" class="img-responsive center-block"></a></div>
+		        <div class="swiper-slide"><a href="javascript:void(0)" title=""><img src="src/images/icon1-430.png" class="img-responsive center-block"></a></div>
+		        <div class="swiper-slide"><a href="javascript:void(0)" title=""><img src="src/images/icon1-430.png" class="img-responsive center-block"></a></div>
+		        <div class="swiper-slide"><a href="javascript:void(0)" title=""><img src="src/images/icon1-430.png" class="img-responsive center-block"></a></div>
+		    </div>
+
+		    <div class="swiper-pagination"></div>
+
+		    <div class="swiper-button-next button-next"></div>
+		    <div class="swiper-button-prev button-prev"></div>
+		</div>
+	</div>
+	<div class="container section1">
+		<h3 class="h3">电夹板直卷两用空气刘海内扣小直发器熨板迷你直板夹卷发棒不伤发</h3>
+		<p class="p">
+			VAV-022B懒人卷发器，今日电器工业园直销。此商品为出口商品，多销往美国、英国等发达国家。
+		</p>
+		<div class="flex iconText">
+			<p class="p1 flex">
+				<span class="img"><img src="src/images/icon2-a29.png" title="" class="img-responsive"></span>
+				<span class="text flex">直卷两用</span>
+			</p>
+			<p class="p1 flex">
+				<span class="img"><img src="src/images/icon3-54f.png" title="" class="img-responsive"></span>
+				<span class="text flex">抗热防烫</span>
+			</p>
+			<p class="p1 flex">
+				<span class="img"><img src="src/images/icon4-32e.png" title="" class="img-responsive"></span>
+				<span class="text flex">含负离子</span>
+			</p>
+		</div>
+		<div class="contentCount flex">
+			<p class="title">爆款特卖：</p>
+			<p class="count">年轻，我的选择   卓越不凡   至臻成就   </p>
+		</div>
+		<div class="contentCount flex">
+			<p class="title">品质保证：</p>
+			<p class="count">正品保证  只换不修  极速退款  赠运费险  七天无理由退换</p>
+		</div>
+	</div>
+	<div class="container bottom flex">
+			<a href="" class="tm"></a>
+			<a href="" class="jd"></a>
+		</div>
+
+	<script type="text/javascript">
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+			      slidesPerView: 1,
+			      spaceBetween: 30,
+			      loop: true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+		});
+	</script>
+</body>
+</html>

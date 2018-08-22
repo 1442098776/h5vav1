@@ -1,0 +1,104 @@
+.section>p{
+	padding: 0 15px;
+	color: #666666;
+	font-size: 1.6rem;
+}
+.section>.p{
+	margin-bottom: 9px;
+}
+.section>.p>span{
+	flex: 1;
+}
+.section>.p>span:first-of-type{
+	margin-right: 15px;
+}
+.section1{
+	padding: 18px 15px 13px;
+	position: relative;
+}
+.section1>.contentCount{
+	margin-bottom: 50px;
+}
+.section1 .left{
+	width: 28%;
+	flex-direction: column;
+	justify-content: center;
+}
+.section1 .right{
+	width: 52%;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+}
+.section1 .dataTime{
+	width: 20%;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.3rem;
+}
+.section1 .dataTime>div{
+	background-color: #fff;
+	padding: 8px 0;
+	z-index: 10;
+}
+.section1 .right>.text{
+	vertical-align:middle;
+	display: table-cell;
+}
+.section1 .right>.text>span{
+	margin-bottom: 10px;
+}
+.section1>.time{
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	top: 0;
+	left: 34.5%;
+}
+.section1>.time>i{
+	position: absolute;
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background-color: #FF335E;
+	top: 0;
+	left: 38%;
+}
+.section1>.time>span{
+	position: absolute;
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: #DCDCDC;
+	left: calc(38% + 3px);
+	top: 8px;
+}
+.section1 span{
+	display: block;
+}
+.section2{
+	width: 100%;
+	overflow: hidden;
+}
+.section2>.null{
+	height: 82px;
+	width: 100%;
+}
+.section2 .swiper-container{
+	overflow:visible !important;
+}
+.swiper-pagination-bullet{
+	background: #CCCCCC !important;
+	opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+	background: #FF335E !important;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+	bottom: -20px !important;
+}
+
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<!-- <link rel="stylesheet" href="src/css/public.css"> -->
+	<!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
+	<!-- public.js是公共的js -->
+	<!-- <script src="src/js/public.js" type="text/javascript"></script> -->
+	<!-- videoPlay.js是视频全屏播放的果 -->
+	<!-- <script src="src/js/videoPlay.js" type="text/javascript"></script> -->
+	<style type="text/css">
+		.section{
+			padding: 0 15px;
+		}
+		.section>.contentCount{
+			padding: 0 0 15px;
+			margin-bottom: 15px;
+			border-bottom: 1px solid #DCDCDC;
+		}
+		.contentCount>.left{
+			width: 33%;
+			margin-right: 3%;
+		}
+		.contentCount>.right{
+			width:64%;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.contentCount>.right .p1{
+			font-family: PingFang SC;
+			font-size: 1.4rem;
+		}
+		.contentCount>.right .time{
+			font-family: PingFang-SC-Medium;
+			font-size: 1.1rem;
+			color: #999999;
+			justify-content: space-between;
+		}
+		#video{
+			display: none;
+			z-index: 40;
+		}
+		/* 视频全频要的样式 */
+		#video:-webkit-full-screen {
+		  width: 100%;
+		  height: 100%;
+		}
+	</style>
+<script type="text/javascript" src="src/js/video-43e.js"></script></head>
+<body>
+	<div class="container header flex">
+	    <div class="navBtn">
+    	    <div class="navBtn1">
+    			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAnAQMAAABDk0jGAAAABlBMVEVMaXH/M15cfIwzAAAAAXRSTlMAQObYZgAAABdJREFUGNNj+Ff/////AwzEUxSCwW4fAIdfbcMFsLLlAAAAAElFTkSuQmCC" class="img-responsive">
+    		</div>
+	    </div>
+		<div class="logo">
+			<div>
+				<img src="src/images/logo-ff6.png" class="img-responsive center-block">
+			</div>
+		</div>
+	</div>
+	<div class="popup">
+		<ul class="list-unstyled">
+			<li><a href="index.html" title="首页">首页</a></li>
+			<li><a href="gallery.html" title="产品中心">产品中心</a></li>
+			<li><a href="video.html" title="视频中心">视频中心</a></li>
+			<li><a href="new.html" title="潮流资讯">潮流资讯</a></li>
+			<li><a href="about.html" title="关于我们">关于我们</a></li>
+			<li><a href="customer.html" title="客户服务">客户服务</a></li>
+			<li><a href="contact.html" title="联系我们">联系我们</a></li>
+			<li><a href="shopping.html" title="在线商城">在线商城</a></li>
+		</ul>
+	</div>
+	<div class="container headerFill"></div>
+	<!-- 以上是头部 -->
+
+	<div class="container">
+		<img src="src/images/video-a7b.png" title="" class="img-responsive center-block">
+	</div>
+	<div class="textHeader flex">
+		<div class="img">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAaCAMAAAAe54vvAAAAq1BMVEVMaXH/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M14ECZvQAAAAOHRSTlMAShBmKOr6zwUD1++1FZn8qjBVAf41co5AgnH3vyCNP98IDH3kW/Mbx6QY4sCEpRnxrzhG2spi8PXuz6gAAADDSURBVEjHpdY1EsNAEERRySDZlmVmZmb89z+ZY8+EPeGrX9W12QbB331e33bgTtMz8HSdpu0WvJu207S5g9bDdqKugb17kKaLFWy2thO1DyzduKbjIczmthO1BjTcuKY9YOQ6TYsxVOu2EzULVNy4ppk8JKntRO0CAzeuaS6CUsF2opaB0I1rGgJl12laKEGUs52oHWDixjVNE8hnbCdqBci6cU3rVYiLthP1BEzduKYNoOY6UWM4Hlwo6v12ufovgaY/ihRRKSjxsqEAAAAASUVORK5CYII=" class="img-responsive center-block">
+		</div>
+		<div class="text">
+			视频中心
+		</div>
+		<div class="img">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAaCAMAAAAe54vvAAAAq1BMVEVMaXH/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M17/M14ECZvQAAAAOHRSTlMAShBmKOr6zwUD1++1FZn8qjBVAf41co5AgnH3vyCNP98IDH3kW/Mbx6QY4sCEpRnxrzhG2spi8PXuz6gAAADDSURBVEjHpdY1EsNAEERRySDZlmVmZmb89z+ZY8+EPeGrX9W12QbB331e33bgTtMz8HSdpu0WvJu207S5g9bDdqKugb17kKaLFWy2thO1DyzduKbjIczmthO1BjTcuKY9YOQ6TYsxVOu2EzULVNy4ppk8JKntRO0CAzeuaS6CUsF2opaB0I1rGgJl12laKEGUs52oHWDixjVNE8hnbCdqBci6cU3rVYiLthP1BEzduKYNoOY6UWM4Hlwo6v12ufovgaY/ihRRKSjxsqEAAAAASUVORK5CYII=" class="img-responsive center-block">
+		</div>
+	</div>
+	<div class="container section">
+		<div class="flex contentCount">
+			<div class="left videoPlay">
+				<img src="src/images/cover1-119.png" title="" class="img-responsive">
+			</div>
+			<div class="right flex">
+				<p class="p1">选择合适的温度，轻松做到卷发不伤发。</p>
+				<div class="time flex">
+					<p>
+						<span>2020-08-12</span>&nbsp;
+						<span>12:36:12</span>
+					</p>
+					<p>
+						浏览:12460
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex contentCount">
+			<div class="left videoPlay">
+				<img src="src/images/cover2-d9a.png" title="" class="img-responsive">
+			</div>
+			<div class="right flex">
+				<p class="p1">选择合适的温度，轻松做到卷发不伤发。</p>
+				<div class="time flex">
+					<p>
+						<span>2020-08-12</span>&nbsp;
+						<span>12:36:12</span>
+					</p>
+					<p>
+						浏览:12460
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex contentCount">
+			<div class="left videoPlay">
+				<img src="src/images/cover1-119.png" title="" class="img-responsive">
+			</div>
+			<div class="right flex">
+				<p class="p1">选择合适的温度，轻松做到卷发不伤发。</p>
+				<div class="time flex">
+					<p>
+						<span>2020-08-12</span>&nbsp;
+						<span>12:36:12</span>
+					</p>
+					<p>
+						浏览:12460
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex contentCount">
+			<div class="left videoPlay">
+				<img src="src/images/cover2-d9a.png" title="" class="img-responsive">
+			</div>
+			<div class="right flex">
+				<p class="p1">选择合适的温度，轻松做到卷发不伤发。</p>
+				<div class="time flex">
+					<p>
+						<span>2020-08-12</span>&nbsp;
+						<span>12:36:12</span>
+					</p>
+					<p>
+						浏览:12460
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 全频播放视频 -->
+		<video class="videoPopup" id="video" currenttime=0 webkit-playsinline="true" playsinline="true" loop x-webkit-airplay="true" controls x5-video-player-fullscreen="true"  x5-video-orientation="landscape" x5-video-player-type="h5">
+			<source src="./src/video/movie01.mp4">
+		</video>
+	</div>
+
+	<!-- 以下是底部 -->
+	<div class="container footerFill"></div>
+	<div class="container footer flex">
+		<a href="index.html" class="active text-center" title="首页">
+			<span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAMAAAAQwSIQAAABaFBMVEVMaXEzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzNAq8X7AAAAd3RSTlMACwL4D/z+7vARDVSSQbxOBgH0IgXbF+jIJPl+V/aVxxBge2sV/QMWhN4w8ajm58wE8rYYH5g5ykPGGrq4O+8UOslpZ2Ni+4LSXIb6eZv1Sp5IofN8UTjsszU86TTauc0m4HFV9wyrLOS+B9y16kudNj7XEw7P3Way/4cAAAGMSURBVDjL7ZVXV8JAEIU3xARCE+k2EAVRsFAU7L333nvvXe/f9yTUaJLNow/ep5m739mdnZ2cEKKkTGv7OdGrzQuAb9QJN3HoPuNgNehgq+bAbxBiYdHmoMLuNcyHxMAWh91Mgc1HWF/NhbEOdHo14fQxfAeFxOWBx6UBn7TisGzd24mOmCq8tQ1/WFaXHXGbCly5hB1GbjnawFoU4XEOi80/TYMV3JhCm6fB1ypt0sjjl59YwdSkcoETHALyMy9TcC6rXb6yHld3Zbk3i/1d9cbuGXH7Ucyq7+Gp1nq06xt8pvPxyyOyUe2B6HrDV26/JyceGNqwvfvhy4h34PCcoA8ykwL7Sgw+tFTp+Ubc3fATtxNJoygt8lQETGgnJJSEJC3aJBGRJqkkQRBodJcgNJRyGl0hy/8kPWKvFztQ09ujgx6sQV6cjU4PICD1irGin04PYTgX9MFEp5Wif5pOszCr044IL/8HjaIlLEgqp3NOdAEz8imrQ0kluqjZH0NpCRoLKlhFI1iXd74BUI92lVA1Q7wAAAAASUVORK5CYII=" class="center-block"></span>
+			<span>首页</span>
+		</a>
+		<a href="gallery.html" class="text-center" title="产品">
+			<span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAqCAMAAAD26OlUAAAA2FBMVEVMaXEzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMU/XgFAAAAR3RSTlMA14/zOP38+Qb4Hh/kMHcMuP52lJCTK5UsB44dpVcq1JEL5bsvvZgJJKareFtVVKTWp6ytcdj6WfQxb5Iurk7yrw0guSEo41jFU/8AAAEqSURBVDjL7dRXT8MwFAXgk2XHbdKR7k1LgS723pvz//8RLzQideLAK+K83aPPkiVbF0imsHz9UI5VWb7BlMJc8CvevJDtHh4pF6sX//l9tZB0LrPcjcen2XqY3bN6lu4GVRF9nyNRHaTez2GUbEp00u7Z5+lmdcJj3RU92dvsetIrarDEvn76kCWtq3BfhwesaF3AYsp9GGidYkeHPmViHnYtxYyoo+5wfazm0Rhvdw8A/G3KLbdMpr0CWXYbkjs+gBYn1wCyIIBwwhrQFCqEGWKqRBM2beRB2LRh0c2HLi1I+vmwQxkDIwT5e2jOP/wLcP3NjCnTiT+uMS5HsHmbDxusoy3UNM/dKdEGWgxCswsDtuIFMM5S43gB/HilAGjWzy+y1NWo3gaAT1SfUn3FzocjAAAAAElFTkSuQmCC" class="center-block"></span>
+			<span>产品</span>
+		</a>
+		<a href="about.html" class="text-center" title=""关于>
+			<span><img src="src/images/about-65a.png" class="center-block"></span>
+			<span>关于</span>
+		</a>
+		<a href="customer.html" class="text-center" title="服务">
+			<span><img src="src/images/serve-a36.png" class="center-block"></span>
+			<span>服务</span>
+		</a>
+		<a href="contact.html" class="text-center" title="联系">
+			<span><img src="src/images/contact-895.png" class="center-block"></span>
+			<span>联系</span>
+		</a>
+	</div>
+</body>
+</html>
