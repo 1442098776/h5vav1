@@ -157,9 +157,18 @@ html {
 .footer>.active{
 	color: #FF335E;
 }
+.footer>.active .img2{
+	display: block !important;
+}
+.footer>.active .img1{
+	display: none !important;
+}
 .footer>a>span:first-of-type{
 	display: block;
 	width: 30%;
 	height:21px;
 	margin: 6px auto 4px auto;
+}
+.footer>a>span:first-of-type>.img2{
+	display: none;
 }
